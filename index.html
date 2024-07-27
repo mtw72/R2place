@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+<head>
+  <title>R2 Place</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="rgb(172, 113, 42)">
+  <meta name='robots' content='max-image-preview:large'>
+  <meta name="keywords" content="R2 Place, restaurant, food, fusion, asian, lunch, dinner, relax, recharge">
+  <meta name="description" content="A place to Relax and Recharge.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Interior of R2 Place">
+  <meta name="twitter:image" content="https://mtw72.github.io/R2-revising/images/twitter-image.jpeg">
+
+  <meta property="og:url" content="https://mtw72.github.io/R2-revising/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="R2 Place">
+  <meta property="og:description" content="A place to Relax and Recharge.">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:image:secure_url" content="https://mtw72.github.io/R2-revising/images/og-image.jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <link rel="icon" type="image/x-icon" href="./dist/assets/images/R2.png">
+  <link rel="canonical" href="https://mtw72.github.io/R2-revising/">
+
+  <!-- Critical resources -->
+  <!-- Google fonts -->
+  <!-- <link rel="stylesheet" href="./dist/styles/googlefont.min.css"> -->
+  <!-- Loader -->
+  <!-- <link rel="stylesheet" href="./dist/styles/loader.min.css">
+  <link rel="stylesheet" href="./dist/styles/critical-style.min.css">
+  <script src="./dist/scripts/critical-modern-script.min.js"></script> -->
+
+  <!-- Non-critical resources -->
+  <!-- <link rel="preload" href="./dist/styles/non-critical-style.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+
+  <script defer src="./dist/scripts/non-critical-modern-script.min.js"></script>
+  <script nomodule defer src="./dist/scripts/non-critical-legacy-script.min.js"></script> -->
+
+  <!-- No script -->
+  <!-- <noscript>
+    <link rel="stylesheet" href="./dist/styles/noscript.css">
+  </noscript> -->
+
+  <link rel="stylesheet" href="./dist/styles/googlefont.css">
+  <link rel="stylesheet" href="./dist/styles/loader.css">
+  <script src="./dist/scripts/critical-modern-script.js"></script>
+
+  <link rel="stylesheet" href="./dist/styles/critical-style.css">
+
+  <link rel="preload" href="./dist/styles/non-critical-style.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+
+  <script defer src="./dist/scripts/non-critical-modern-script.js"></script>
+  <script nomodule defer src="./dist/scripts/non-critical-legacy-script.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Loader -->
+  <div class="loader__container">
+    <div class="loader__object"></div>
+    <p>Welcome to R2&nbsp;Place</p>
+  </div>
+
+  <noscript class="no-script">
+    <p>JavaScript is disabled. The page may not function properly.</p>
+  </noscript>
+
+  <!-- website content -->
+  <div class="website-content website-content--hidden">
+
+    <header>
+      <!-- skip link for keyboard users -->
+      <a href="#menu" class="skip-link">Skip to Menu</a>
+
+      <!-- A horizontal navbar that becomes vertical on small screens -->
+      <nav class="navbar" id="navbar">
+        <div class="navbar__container">
+          <a class="navbar__brand logofont" href="#home" aria-label="R2 Place Homepage">R2 Place</a>
+
+          <button class="navbar__toggler" type="button" aria-controls="collapsibleNavbar" aria-haspopup="true"
+            aria-label="Open Menu" id="menu-toggler">&#9776;</button>
+
+          <div class="navbar__collapse" id="collapsibleNavbar" aria-labelledby="menu-toggler">
+            <ul class="navbar__nav" aria-label="Navigation in R2 Place">
+              <li class="navbar__nav-item" role="none">
+                <a class="navbar__nav-link" href="#menu" role="menuitem">Menu</a>
+              </li>
+              <li class="navbar__nav-item" role="none">
+                <a class="navbar__nav-link" href="#reservation" role="menuitem">Reservation</a>
+              </li>
+              <li class="navbar__nav-item" role="none">
+                <a class="navbar__nav-link" href="#findus" role="menuitem">Find Us</a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home -->
+      <section id="home">
+        <picture>
+          <source media="(min-width: 1500.5px)" srcset="./dist/assets/images/home-bg-xl.webp" type="image/webp">
+          <source media="(min-width: 1500.5px)" srcset="./dist/assets/images/home-bg-xl.jpeg">
+          <source media="(min-width: 930.5px)" srcset="./dist/assets/images/home-bg-lg.webp" type="image/webp">
+          <source media="(min-width: 930.5px)" srcset="./dist/assets/images/home-bg-lg.jpeg">
+          <source media="(min-width: 449.5px)" srcset="./dist/assets/images/home-bg-md.webp" type="image/webp">
+          <source media="(min-width: 449.5px)" srcset="./dist/assets/images/home-bg-md.jpeg">
+          <img src="./dist/assets/images/home-bg-sm.webp"
+            onerror="this.onerror=null; this.src='./dist/assets/images/home-bg-sm.jpeg';" alt="R2 Place"
+            fetchpriority="high">
+        </picture>
+        <div class="hero-text">
+          <h1>R2 Place</h1>
+          <p>A place to Relax and Recharge</p>
+        </div>
+      </section>
+
+      <!-- Menu Container -->
+      <!-- On small screen size, there will be an accordion and a carousel -->
+      <!-- On medium screen size, there will be tabs & panels without photos inside and a carousel -->
+      <!-- On large screen size, there will be tabs & panels with photos inside -->
+
+      <section id="menu" aria-label="menu">
+        <h2>MENU</h2>
+        <div class="accordion">
+          <!-- accordion content for small menu -->
+          <button class="accordion__button accordion__button--active" type="button" aria-controls="pasta-panel"
+            id="pasta-button">
+            PASTA
+          </button>
+          <div class="accordion__panel" id="pasta-panel" aria-labelledby="pasta-button">
+            <div class="accordion__content">
+              <div class="accordion__item accordion__item--1">Salmon Spaghetti</div>
+              <div class="accordion__item-price accordion__item-price--1">£12.50</div>
+              <div class="accordion__item accordion__item--2">Baked Seafood Fettuccine</div>
+              <div class="accordion__item-price accordion__item-price--2">£14.50</div>
+              <div class="accordion__item accordion__item--3">Mac and Cheese with Ham</div>
+              <div class="accordion__item-price accordion__item-price--3">£10.50</div>
+            </div>
+          </div>
+
+          <button class="accordion__button accordion__button--active" type="button" aria-controls="rice-panel"
+            id="rice-button">
+            RICE
+          </button>
+          <div class="accordion__panel" id="rice-panel" aria-labelledby="rice-button">
+            <div class="accordion__content">
+              <div class="accordion__item accordion__item--1">Thai Pineapple Fried Rice</div>
+              <div class="accordion__item-price accordion__item-price--1">£16.50</div>
+              <div class="accordion__item accordion__item--2">Salmon and Prawn Risotto</div>
+              <div class="accordion__item-price accordion__item-price--2">£14.50</div>
+              <div class="accordion__item accordion__item--3">Mackerel with Black Rice</div>
+              <div class="accordion__item-price accordion__item-price--3">£12.50</div>
+            </div>
+          </div>
+
+          <button class="accordion__button accordion__button--active" type="button" aria-controls="sides-panel"
+            id="sides-button">
+            SIDES
+          </button>
+          <div class="accordion__panel" id="sides-panel" aria-labelledby="sides-button">
+            <div class="accordion__content">
+              <div class="accordion__item accordion__item--1">Satay Chicken Skewers</div>
+              <div class="accordion__item-price accordion__item-price--1">£8.00</div>
+              <div class="accordion__item accordion__item--2">Salmon Avocado Rolls</div>
+              <div class="accordion__item-price accordion__item-price--2">£9.50</div>
+              <div class="accordion__item accordion__item--3">Petits Pains Curry Prawn</div>
+              <div class="accordion__item-price accordion__item-price--3">£8.50</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu">
+          <!-- menu content for medium to large menu -->
+          <div class="menu__tabs" role="tablist" aria-labelledby="menu">
+            <button class="menu__tab menu__tab--active" type="button" role="tab" aria-controls="pasta-menu"
+              id="pasta-tab">
+              PASTA
+            </button>
+            <button class="menu__tab" type="button" role="tab" aria-controls="rice-menu" id="rice-tab">
+              RICE
+            </button>
+            <button class="menu__tab" type="button" role="tab" aria-controls="sides-menu" id="sides-tab">
+              SIDES
+            </button>
+          </div>
+
+          <div class="menu__panel" role="tabpanel" id="pasta-menu" aria-labelledby="pasta-tab">
+            <div class="menu__item menu__item--1">
+              <p class="menu__item-name">Salmon Spaghetti
+                <span class="menu__item-price">£12.50</span>
+              </p>
+              <p>Salmon Spaghetti with Mushroom Sauce</p>
+            </div>
+            <div class="menu__item menu__item--2">
+              <p class="menu__item-name">Baked Seafood Fettuccine
+                <span class="menu__item-price">£14.50</span>
+              </p>
+              <p>Prawn and Squid with Fettuccine with White Sauce</p>
+            </div>
+            <div class="menu__item menu__item--3">
+              <p class="menu__item-name">Mac and Cheese with Ham
+                <span class="menu__item-price">£10.50</span>
+              </p>
+              <p>Macaroni and Cheese with Parma Ham</p>
+            </div>
+            <div class="menu__image">
+              <img src="./dist/assets/images/salmon-spaghetti.webp"
+                onerror="this.onerror=null; this.src='./dist/assets/images/salmon-spaghetti.jpeg';"
+                alt="Salmon Spaghetti" loading="lazy">
+              <p class="menu__image-description">Salmon Spaghetti</p>
+            </div>
+          </div>
+
+          <div class="menu__panel" role="tabpanel" id="rice-menu" aria-labelledby="rice-tab">
+            <div class="menu__item menu__item--1">
+              <p class="menu__item-name">Thai Pineapple Fried Rice
+                <span class="menu__item-price">£16.50</span>
+              </p>
+              <p>Thai-style Fried Rice with Seafood and Pineapple</p>
+            </div>
+            <div class="menu__item menu__item--2">
+              <p class="menu__item-name">Salmon and Prawn Risotto
+                <span class="menu__item-price">£14.50</span>
+              </p>
+              <p>Salmon and Prawn Risotto in Mushroom Sauce</p>
+            </div>
+            <div class="menu__item menu__item--3">
+              <p class="menu__item-name">Mackerel with Black Rice
+                <span class="menu__item-price">£12.50</span>
+              </p>
+              <p>Grilled Mackerel with Tofu and Black Rice</p>
+            </div>
+            <div class="menu__image">
+              <img src="./dist/assets/images/thai-pineapple-fried-rice.webp"
+                onerror="this.onerror=null; this.src='./dist/assets/images/thai-pineapple-fried-rice.jpeg';"
+                alt="Thai Pineapple Fried Rice" loading="lazy">
+              <p class="menu__image-description">Thai Pineapple Fried Rice</p>
+            </div>
+          </div>
+
+          <div class="menu__panel" role="tabpanel" id="sides-menu" aria-labelledby="sides-tab">
+            <div class="menu__item menu__item--1">
+              <p class="menu__item-name">Satay Chicken Skewers
+                <span class="menu__item-price">£8.00</span>
+              </p>
+              <p>Grilled Chicken Skewers with Satay Sauce</p>
+            </div>
+            <div class="menu__item menu__item--2">
+              <p class="menu__item-name">Salmon Avocado Rolls
+                <span class="menu__item-price">£9.50</span>
+              </p>
+              <p>Salmon, Egg and Avocado in Rice Paper Rolls</p>
+            </div>
+            <div class="menu__item menu__item--3">
+              <p class="menu__item-name">Petits Pains Curry Prawn
+                <span class="menu__item-price">£8.50</span>
+              </p>
+              <p>Curry Prawn in Petits Pains</p>
+            </div>
+            <div class="menu__image">
+              <img src="./dist/assets/images/satay-chicken-skewers.webp"
+                onerror="this.onerror=null; this.src='./dist/assets/images/satay-chicken-skewers.jpeg';"
+                alt="Satay Chicken Skewers" loading="lazy">
+              <p class="menu__image-description">Satay Chicken Skewers</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- carousel content for small to medium menu -->
+        <div class="carousel" aria-roledescription="carousel">
+          <div id="carousel__track" aria-live="off">
+            <!-- images with caption text -->
+            <div class="carousel__slide" id="carousel-slide1" role="tabpanel" aria-roledescription="slide"
+              aria-label="Slide 1 of 3">
+              <img class="carousel__image" src="./dist/assets/images/salmon-spaghetti.webp"
+                onerror="this.onerror=null; this.src='./dist/assets/images/salmon-spaghetti.jpeg';"
+                alt="Salmon Spaghetti" loading="lazy">
+              <div class="carousel__image-description">Salmon Spaghetti</div>
+            </div>
+
+            <div class="carousel__slide" id="carousel-slide2" role="tabpanel" aria-roledescription="slide"
+              aria-label="Slide 2 of 3">
+              <img class="carousel__image" src="./dist/assets/images/thai-pineapple-fried-rice.webp"
+                onerror="this.onerror=null; this.src='./dist/assets/images/thai-pineapple-fried-rice.jpeg';"
+                alt="Thai Pineapple Fried Rice" loading="lazy">
+              <div class="carousel__image-description">Thai Pineapple Fried Rice</div>
+            </div>
+
+            <div class="carousel__slide" id="carousel-slide3" role="tabpanel" aria-roledescription="slide"
+              aria-label="Slide 3 of 3">
+              <img class="carousel__image" src="./dist/assets/images/satay-chicken-skewers.webp"
+                onerror="this.onerror=null; this.src='./dist/assets/images/satay-chicken-skewers.jpeg';"
+                alt="Satay Chicken Skewers" loading="lazy">
+              <div class="carousel__image-description">Satay Chicken Skewers</div>
+            </div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <button class="carousel__prev-button" type="button" aria-label="Go to the previous slide"
+            aria-controls="carousel__track">&#10094;</button>
+          <button class="carousel__next-button" type="button" aria-label="Go to the next slide"
+            aria-controls="carousel__track">&#10095;</button>
+
+          <div class="carousel__bottom-control">
+            <!-- Play and pause buttons -->
+            <button class="carousel__pause-button" type="button" aria-label="Stop Automatic Slide Show"
+              aria-hidden="false">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6 2.8C5.33726 2.8 4.8 3.33726 4.8 4V20C4.8 20.6627 5.33726 21.2 6 21.2H10C10.6627 21.2 11.2 20.6627 11.2 20V4C11.2 3.33726 10.6627 2.8 10 2.8H6ZM7.2 18.8V5.2H8.8V18.8H7.2ZM14 2.8C13.3373 2.8 12.8 3.33726 12.8 4V20C12.8 20.6627 13.3373 21.2 14 21.2H18C18.6627 21.2 19.2 20.6627 19.2 20V4C19.2 3.33726 18.6627 2.8 18 2.8H14ZM15.2 18.8V5.2H16.8V18.8H15.2Z"
+                  fill="#c38154" stroke="#c38154" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+              </svg>
+            </button>
+            <button class="carousel__play-button hidden" type="button" aria-label="Start Automatic Slide Show"
+              aria-hidden="true">
+              <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.64891 1.99059C5.27966 1.75321 4.81026 1.7364 4.42497 1.94675C4.03969 2.15709 3.8 2.56103 3.8 3V21C3.8 21.439 4.03969 21.8429 4.42497 22.0533C4.81026 22.2636 5.27966 22.2468 5.64891 22.0094L19.6489 13.0094C19.9924 12.7886 20.2 12.4083 20.2 12C20.2 11.5917 19.9924 11.2114 19.6489 10.9906L5.64891 1.99059ZM6.2 5.198L16.7809 12L6.2 18.802V5.198Z"
+                  fill="#c38154" stroke="#c38154" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+              </svg>
+            </button>
+
+            <div class="carousel__progress-list" role="tablist" aria-label="Slides" tabindex="0">
+              <div class="carousel__progress-container">
+                <button class="carousel__progress-bar" type="button" role="tab" aria-label="Slide 1"
+                  aria-controls="carousel-slide1" id="bar1"></button>
+              </div>
+              <div class="carousel__progress-container">
+                <button class="carousel__progress-bar" type="button" role="tab" aria-label="Slide 2"
+                  aria-controls="carousel-slide2" id="bar2"></button>
+              </div>
+              <div class="carousel__progress-container">
+                <button class="carousel__progress-bar" type="button" role="tab" aria-label="Slide 3"
+                  aria-controls="carousel-slide3" id="bar3"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- Reservation -->
+      <section id="reservation" aria-label="reservation">
+        <h2>RESERVATION</h2>
+        <div class="reservation">
+          <!-- reservation photo -->
+          <div class="reservation__photo">
+            <picture>
+              <source media="(min-width: 575.5px)" srcset="./dist/assets/images/r2place-entrance-md.webp"
+                type="image/webp">
+              <source media="(min-width: 575.5px)" srcset="./dist/assets/images/r2place-entrance-md.jpeg">
+              <img src="./dist/assets/images/r2place-entrance-sm.webp"
+                onerror="this.onerror=null; this.src='./dist/assets/images/r2place-entrance-sm.jpeg';"
+                alt="R2 Place Entrance" loading="lazy">
+            </picture>
+          </div>
+
+          <!-- reservation form -->
+          <form action="./index.html" id="reservation-form">
+            <!-- <form action="form.php" onsubmit="openModal(event)" method="post"> -->
+
+            <div class="reservation__form">
+              <div class="reservation__name">
+                <label for="name">Name</label>
+                <span class="mandatory-field" aria-hidden="true">*</span>
+                <input type="text" class="input-control" id="name" placeholder="Enter Name" name="name" required
+                  aria-required="true" autocomplete="name" pattern="[A-Za-z\. '\-]+">
+                <p class="error-message" id="name-error" role="alert">Please enter at least two letters</p>
+              </div>
+
+              <div class="reservation__phone">
+                <label for="phone">Phone Number</label>
+                <span class="mandatory-field" aria-hidden="true">*</span>
+                <input type="tel" class="input-control" id="phone" placeholder="Enter Phone Number" name="phone"
+                  required aria-required="true" autocomplete="tel" pattern="[0-9+]{7,}">
+                <p class="error-message" id="phone-error" role="alert">Please enter a valid phone number</p>
+              </div>
+
+              <div class="reservation__email">
+                <label for="email">Email</label>
+                <span class="mandatory-field" aria-hidden="true">*</span>
+                <input type="email" class="input-control" id="email" placeholder="Enter Email" name="email" required
+                  aria-required="true" autocomplete="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                <p class="error-message" id="email-error" role="alert">Please enter a valid email address</p>
+              </div>
+
+              <div class="reservation__guest-number">
+                <label for="guest-number">Number of Guest(s)</label>
+                <span class="mandatory-field" aria-hidden="true">*</span>
+                <select class="select-control" id="guest-number" name="guest-number" required aria-required="true">
+                  <option value="" disabled selected>Select Number of Guest(s)</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+                <p class="error-message" id="guest-number-error" role="alert">Please select number of guest(s)</p>
+              </div>
+
+              <div class="reservation__date">
+                <label for="date">Date</label>
+                <span class="mandatory-field" aria-hidden="true">*</span>
+                <input type="date" class="input-control" id="date" name="date" required aria-required="true">
+                <p class="error-message" id="date-error" role="alert">Please select a valid date</p>
+              </div>
+
+              <div class="reservation__time">
+                <label for="time">Time</label>
+                <span class="mandatory-field" aria-hidden="true">*</span>
+                <select class="select-control" id="time" name="time" required aria-required="true">
+                  <option value="" disabled selected id="time-first-option">Select Time</option>
+                  <!-- Options will be dynamically generated here -->
+                </select>
+                <p class="error-message" id="time-error" role="alert">Please select a valid time</p>
+              </div>
+
+              <div class="reservation__optional-message">
+                <label for="optional-message">Message / Special Request</label>
+                <textarea class="textarea-control" id="optional-message" name="optional-message"
+                  aria-required="false">(e.g. Dietary Restriction, Special Occasions)</textarea>
+              </div>
+
+              <div class="reservation__bottom-part clearfix">
+                <p>** Please make the reservation at least an hour before the booking time.</p>
+                <button id="formSumbitButton" type="submit" class="reservation__submit-button">Submit</button>
+              </div>
+            </div>
+          </form>
+
+          <!-- confirmation message -->
+          <div class="confirmation-message__container" id="confirmation-message" role="dialog"
+            aria-labelledby="modalTitle">
+            <div class="confirmation-message__content">
+              <header>
+                <h3 id="modalTitle" tabindex="0">Booking Summary</h3>
+                <span class="confirmation-message__close-button" role="button" tabindex="0"
+                  aria-label="Close this message box">&times;</span>
+              </header>
+              <p>Please confirm the following details:</p>
+              <ul class="confirmation-message__list" tabindex="0">
+                <li>Name:</li>
+                <li id="name-value"></li>
+                <li>Phone Number:</li>
+                <li id="phone-value"></li>
+                <li>Email:</li>
+                <li id="email-value"></li>
+                <li>Number of Guest:</li>
+                <li id="guest-number-value"></li>
+                <li>Date:</li>
+                <li id="date-value"></li>
+                <li>Time:</li>
+                <li id="time-value"></li>
+                <li>Message / Special Request:</li>
+                <li id="optional-message-value"></li>
+              </ul>
+              <div class="confirmation-message__bottom-buttons">
+                <button class="confirmation-message__cancel-button" type="button">Cancel</button>
+                <button class="confirmation-message__confirm-button" type="button">Confirm</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- Find us -->
+      <section class="findus" id="findus" aria-label="find us">
+        <div class="findus__container">
+          <div class="logofont__container">
+            <p class="logofont" role="presentation">R2 Place</p>
+          </div>
+
+          <!-- contact information-->
+          <div class="contact__container">
+            <div class="contact__content">
+              <h2>Find Us</h2>
+              <address>
+                <ul class="contact__grid">
+                  <li>
+                    <i class="contact__icon icon icon-solid icon-location" role="img" aria-label="Address"></i>
+                  </li>
+                  <li>
+                    R2&nbsp;Place,<wbr> 2&nbsp;Relax&nbsp;Street,<wbr> R2&nbsp;1ST
+                  </li>
+                  <li>
+                    <i class="contact__icon icon icon-solid icon-phone" role="img" aria-label="Telephone">
+                    </i>
+                  </li>
+                  <li>
+                    <a href="tel:+441234567890" class="g-link" aria-label="Call us at 0123 456 7890">0123
+                      456 7890</a>
+                  </li>
+                  <li>
+                    <i class="contact__icon icon icon-solid icon-envelope" role="img" aria-label="Email"></i>
+                  </li>
+                  <li>
+                    <a href="mailto:info@r2p.com" class="g-link" aria-label="Email us at info@r2p.com">info@r2p.com</a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+
+          <!-- opening hours -->
+          <div class="openhour__container">
+            <div class="openhour__content">
+              <h3>Opening Hours</h3>
+              <ul class="openhour__small-grid">
+                <li>Sunday</li>
+                <li><time>12:00</time> - <time>17:00</time></li>
+                <li>Monday to Thursday</li>
+                <li><time>12:00</time> - <time>20:00</time></li>
+                <li>Friday & Saturday</li>
+                <li><time>12:00</time> - <time>21:00</time></li>
+              </ul>
+              <ul class="openhour__large-grid">
+                <li>Sunday:</li>
+                <li><time>12:00</time> - <time>17:00</time></li>
+                <li>Monday:</li>
+                <li><time>12:00</time> - <time>20:00</time></li>
+                <li>Tuesday:</li>
+                <li><time>12:00</time> - <time>20:00</time></li>
+                <li>Wednesday:</li>
+                <li><time>12:00</time> - <time>20:00</time></li>
+                <li>Thursday:</li>
+                <li><time>12:00</time> - <time>20:00</time></li>
+                <li>Friday:</li>
+                <li><time>12:00</time> - <time>21:00</time></li>
+                <li>Saturday:</li>
+                <li><time>12:00</time> - <time>21:00</time></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="social-icons">
+        <a href="https://en-gb.facebook.com/" target="_blank" type="text/html" hreflang="en" rel="noopener noreferrer"
+          aria-label="Visit us on Meta">
+          <i class="g-link icon icon-brand icon-meta" role="img" aria-label="Meta Icon"></i>
+        </a>
+        <a href="https://twitter.com/?lang=en" target="_blank" type="text/html" hreflang="en" rel="noopener noreferrer"
+          aria-label="Visit us on X(Twitter)">
+          <i class="g-link icon icon-brand icon-twitter" role="img" aria-label="X (Twitter) Icon"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" type="text/html" hreflang="en" rel="noopener noreferrer"
+          aria-label="Visit us on Instagram">
+          <i class="g-link icon icon-brand icon-instagram" role="img" aria-label="Instagram Icon"></i>
+        </a>
+      </div>
+      <p>© <span id="year"></span> R2&nbsp;Place. All&nbsp;rights&nbsp;reserved</p>
+    </footer>
+
+    <!-- end of hidden content -->
+  </div>
+</body>
+
+</html>
