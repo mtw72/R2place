@@ -1,0 +1,1233 @@
+/* Caption text */
+.carousel__image-description {
+  background-color: rgb(153, 104, 41);
+  color: rgb(255, 251, 235);
+  border-top: 1px solid rgb(153, 104, 41);
+}
+
+.carousel__prev-button,
+.carousel__next-button {
+  color: rgb(163, 90, 0);
+}
+
+.carousel__progress-container {
+  background-color: transparent;
+}
+
+.current-container,
+.carousel__progress-bar {
+  background-color: rgb(252, 222, 185);
+}
+
+.carousel__progress-list:focus,
+.current-bar:focus {
+  outline: 2px solid rgb(255, 165, 0);
+}
+
+.current-bar,
+.finished-bar {
+  background-color: rgb(195, 129, 84);
+}
+
+.reservation__photo img {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(222, 226, 230);
+}
+
+.mandatory-field {
+  color: rgb(255, 0, 0);
+}
+
+.input-control {
+  color: rgb(33, 37, 41);
+}
+
+.textarea-control {
+  color: rgba(33, 37, 41, 0.7);
+}
+
+.input-control,
+.textarea-control,
+select {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(206, 212, 218);
+}
+
+/* change textarea color when the user is typing */
+.textarea-control.input {
+  color: rgb(0, 0, 0);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid rgb(255, 165, 0);
+  outline: 1px solid rgb(255, 165, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+select {
+  color: rgba(33, 37, 41, 0.7);
+}
+
+select.valid {
+  color: rgb(0, 0, 0);
+}
+
+#guest-number option:not(first-of-type),
+#time option {
+  color: rgb(0, 0, 0);
+}
+
+#guest-number option:first-of-type,
+#time #time-first-option {
+  color: rgba(33, 37, 41, 0.7);
+}
+
+.error-input {
+  border: 1px solid rgb(255, 0, 0);
+  outline: 1px solid rgb(255, 0, 0);
+}
+
+.error-message {
+  color: rgb(255, 0, 0);
+}
+
+.reservation__submit-button {
+  background-color: rgb(174, 96, 0);
+  color: rgb(255, 251, 235);
+  -webkit-box-shadow: 1px 1px 1px rgb(128, 70, 0);
+          box-shadow: 1px 1px 1px rgb(128, 70, 0);
+}
+.reservation__submit-button:hover {
+  outline: 3px solid rgb(255, 165, 0);
+}
+.reservation__submit-button:focus {
+  outline: 3px solid rgb(255, 165, 0);
+}
+
+.confirmation-message__container {
+  background-color: rgba(211, 211, 211, 0.5);
+}
+
+.confirmation-message__content {
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 0px 3px rgb(128, 128, 128);
+          box-shadow: 0px 0px 3px rgb(128, 128, 128);
+}
+
+.confirmation-message__container header {
+  background-color: rgb(255, 251, 235);
+  color: rgb(0, 0, 0);
+}
+
+.confirmation-message__close-button:focus {
+  outline: 2px solid rgb(255, 165, 0);
+}
+
+.confirmation-message__confirm-button {
+  background-color: rgb(174, 96, 0);
+  color: rgb(255, 251, 235);
+}
+
+.confirmation-message__cancel-button {
+  background-color: rgb(206, 212, 218);
+  color: rgb(0, 0, 0);
+}
+
+.contact__container h2,
+.openhour__container h3 {
+  border-bottom: 4px dotted rgb(206, 212, 218);
+}
+
+.contact__icon {
+  color: rgb(119, 119, 119);
+}
+
+/* links for 
+contacts in findus and
+social icons in footer  */
+.g-link {
+  color: rgb(162, 89, 0);
+}
+
+.g-link:hover {
+  color: rgba(162, 89, 0, 0.75);
+  border-bottom: 2px solid rgba(162, 89, 0, 0.75);
+}
+
+.g-link:active {
+  color: rgb(128, 70, 0);
+}
+
+.carousel__image-description {
+  font-size: 1.3rem;
+}
+
+.input-control,
+.textarea-control,
+select {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: inherit;
+}
+
+.reservation__submit-button:hover {
+  font-weight: bold;
+}
+
+.confirmation-message__container header {
+  font-size: clamp(1.5rem, 1rem + 1.5vw, 2rem);
+}
+
+.confirmation-message__close-button:hover {
+  font-weight: bold;
+}
+
+.confirmation-message__list li:nth-of-type(even) {
+  -webkit-text-decoration: 1px underline rgb(211, 211, 211);
+          text-decoration: 1px underline rgb(211, 211, 211);
+  text-underline-position: under;
+}
+@media all and (min-width: 36em) {
+  .confirmation-message__list li:nth-of-type(even) {
+    text-decoration: none;
+  }
+}
+
+.confirmation-message__bottom-button:hover {
+  font-weight: bold;
+}
+
+.contact__container h2,
+.openhour__container h3 {
+  font-size: clamp(1.5rem, 1rem + 1.5vw, 2rem);
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.skip-link {
+  position: absolute;
+  left: 50%;
+  top: 2px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.skip-link:focus {
+  position: fixed;
+  width: auto;
+  height: auto;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+}
+
+.webp,
+.temp-img {
+  max-width: 100px;
+  width: 90%;
+  height: auto;
+}
+
+.skip-link:focus {
+  z-index: 1000;
+}
+
+.navbar {
+  z-index: 100;
+}
+
+.hero-text {
+  z-index: 10;
+}
+
+.menu__tab-link::after {
+  z-index: 1;
+}
+
+.confirmation-message__container {
+  z-index: 400;
+}
+
+.reservation__form {
+  max-width: 18.75rem;
+  margin-inline: auto;
+}
+@media all and (min-width: 28.125em) {
+  .reservation__form {
+    max-width: 26.5625rem;
+  }
+}
+@media all and (min-width: 36em) {
+  .reservation__form {
+    max-width: 37.5rem;
+  }
+}
+@media all and (min-width: 48em) {
+  .reservation__form {
+    max-width: 50rem;
+  }
+}
+@media all and (min-width: 62em) and (max-width: 76.24875em) {
+  .reservation__form {
+    max-width: 62.5rem;
+  }
+}
+
+.reservation__form > div {
+  max-width: 18.75rem;
+}
+@media all and (min-width: 28.125em) {
+  .reservation__form > div {
+    max-width: 26.5625rem;
+  }
+}
+@media all and (min-width: 36em) {
+  .reservation__form > div {
+    max-width: 100%;
+  }
+}
+
+section.findus {
+  padding-block: 2rem;
+}
+@media all and (min-width: 48em) {
+  section.findus {
+    padding-block: 2.5rem;
+  }
+}
+@media all and (min-width: 62em) {
+  section.findus {
+    padding-block: 3rem;
+  }
+}
+@media all and (min-width: 76.25em) {
+  section.findus {
+    padding-block: 3.5rem;
+  }
+}
+
+.findus__container {
+  margin-inline: auto;
+}
+@media all and (min-width: 28.125em) {
+  .findus__container {
+    max-width: 26.5625rem;
+  }
+}
+@media all and (min-width: 36em) {
+  .findus__container {
+    max-width: 37.5rem;
+  }
+}
+@media all and (min-width: 48em) {
+  .findus__container {
+    max-width: 50rem;
+  }
+}
+@media all and (min-width: 62em) {
+  .findus__container {
+    max-width: 62.5rem;
+  }
+}
+@media all and (min-width: 76.25em) {
+  .findus__container {
+    max-width: 93.75rem;
+  }
+}
+
+footer {
+  padding-block: 2rem;
+}
+@media all and (min-width: 48em) {
+  footer {
+    padding-block: 2.25rem;
+  }
+}
+@media all and (min-width: 62em) {
+  footer {
+    padding-block: 2.5rem;
+  }
+}
+
+/* Slideshow container */
+.carousel {
+  position: relative;
+  margin: auto;
+  margin-top: 1.5625rem;
+  max-width: 21.875rem;
+}
+@media all and (min-width: 28.125em) {
+  .carousel {
+    margin-top: 2.8125rem;
+  }
+}
+
+/* Hide the images by default */
+.carousel__slide {
+  display: none;
+}
+
+/* Fading animation */
+.carousel__slide.current-slide {
+  display: block;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.carousel__image {
+  display: block;
+  margin-inline: auto;
+  width: 85%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.carousel__image-description {
+  margin-inline: auto;
+  padding: 0.375rem 0.75rem;
+  width: 85%;
+  max-width: 21.875rem;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+}
+
+.carousel__prev-button,
+.carousel__next-button {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  font-weight: bold;
+  font-size: 1rem;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0;
+  background-color: transparent;
+}
+
+.carousel__prev-button {
+  left: -4px;
+}
+
+.carousel__next-button {
+  right: -4px;
+}
+
+@media all and (min-width: 28.125em) {
+  .carousel__prev-button,
+  .carousel__next-button {
+    top: 42%;
+    font-size: 1.25rem;
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+    padding: 1rem;
+  }
+  .carousel__prev-button {
+    left: -30px;
+  }
+  .carousel__next-button {
+    right: -30px;
+  }
+}
+/* The dots indicators */
+.carousel__bottom-control {
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel__progress-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-width: 6.875rem;
+}
+
+.carousel__pause-button,
+.carousel__play-button {
+  border: none;
+  background-color: transparent;
+  display: block;
+}
+
+.carousel__pause-button.hidden,
+.carousel__play-button.hidden {
+  display: none;
+}
+
+.carousel__progress-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 0;
+}
+
+.carousel__progress-bar {
+  margin: 0;
+  padding: 0;
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 100%;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.current-container {
+  max-width: 3.5rem;
+  width: 100%;
+  height: 0.75rem;
+  border-radius: 0.75rem;
+}
+
+.current-bar {
+  width: 0%;
+  border-radius: 0.75rem;
+}
+
+.reservation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media all and (min-width: 76.25em) {
+  .reservation {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    gap: 2.1875rem;
+  }
+}
+@media all and (min-width: 87.5em) {
+  .reservation {
+    grid-template-columns: 1fr 1.1fr;
+    gap: 2.5rem;
+  }
+}
+
+.reservation__form {
+  display: grid;
+  grid-template-rows: repeat(6, auto) repeat(2, auto);
+  row-gap: 0.625rem;
+}
+@media all and (min-width: 36em) {
+  .reservation__form {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto) repeat(2, auto);
+    gap: 1.25rem;
+  }
+}
+@media all and (min-width: 62em) and (max-width: 76.24875em) {
+  .reservation__form {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto) repeat(2, auto);
+  }
+}
+
+@media all and (min-width: 36em) {
+  .reservation__name {
+    grid-area: 1/1/2/2;
+  }
+  .reservation__phone {
+    grid-area: 1/2/2/3;
+  }
+  .reservation__email {
+    grid-area: 2/1/3/2;
+  }
+  .reservation__guest-number {
+    grid-area: 2/2/3/3;
+  }
+  .reservation__date {
+    grid-area: 3/1/4/2;
+  }
+  .reservation__time {
+    grid-area: 3/2/4/3;
+  }
+  .reservation__optional-message {
+    grid-area: 4/1/5/3;
+  }
+  .reservation__bottom-part {
+    grid-area: 5/1/6/3;
+  }
+}
+@media all and (min-width: 62em) and (max-width: 76.24875em) {
+  .reservation__email {
+    grid-area: 1/3/2/4;
+  }
+  .reservation__guest-number {
+    grid-area: 2/1/3/2;
+  }
+  .reservation__date {
+    grid-area: 2/2/3/3;
+  }
+  .reservation__time {
+    grid-area: 2/3/3/4;
+  }
+  .reservation__optional-message {
+    grid-area: 3/1/5/4;
+  }
+  .reservation__bottom-part {
+    grid-area: 5/1/6/4;
+  }
+}
+#reservation h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+@media all and (min-width: 28.125em) {
+  #reservation h2 {
+    margin-bottom: 2rem;
+  }
+}
+@media all and (min-width: 48em) {
+  #reservation h2 {
+    margin-bottom: 2.5rem;
+  }
+}
+@media all and (min-width: 62em) {
+  #reservation h2 {
+    margin-bottom: 3rem;
+  }
+}
+@media all and (min-width: 76.25em) {
+  #reservation h2 {
+    margin-bottom: 3.5rem;
+  }
+}
+@media all and (min-width: 87.5em) {
+  #reservation h2 {
+    margin-bottom: 4rem;
+  }
+}
+
+.reservation__photo {
+  display: none;
+}
+@media all and (min-width: 28.125em) {
+  .reservation__photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 1.5rem;
+  }
+}
+@media all and (min-width: 76.25em) {
+  .reservation__photo {
+    padding-bottom: 5.5rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.reservation__photo img {
+  max-width: 26.5625rem;
+  max-height: 25rem;
+  width: 100%;
+  height: auto;
+  border-radius: 0.375rem;
+  padding: 0.25rem;
+}
+@media all and (min-width: 36em) {
+  .reservation__photo img {
+    max-width: 37.5rem;
+    max-height: 25rem;
+  }
+}
+
+.input-control,
+.select-control {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  padding: 0.375rem 0.75rem;
+  background-clip: padding-box;
+  border-radius: 0.375rem;
+}
+
+input#date {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+input::-webkit-datetime-edit {
+  display: block;
+  padding: 0;
+  text-align: left;
+}
+
+.textarea-control {
+  display: block;
+  width: 100%;
+  height: 6rem;
+  padding: 0.375rem 0.75rem;
+  background-clip: padding-box;
+  border-radius: 0.375rem;
+}
+@media all and (min-width: 62em) {
+  .textarea-control {
+    height: 7.5rem;
+  }
+}
+
+.error-message {
+  display: none;
+}
+
+.reservation__submit-button {
+  margin-top: 0.75rem;
+  padding: 0.625rem 1rem;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  float: right;
+  cursor: pointer;
+}
+
+.confirmation-message__container {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.confirmation-message__content {
+  border: none;
+  width: auto;
+  max-width: 90%;
+  border-radius: 5px;
+}
+@media all and (min-width: 36em) {
+  .confirmation-message__content {
+    max-width: auto;
+  }
+}
+
+.confirmation-message__container header {
+  position: relative;
+  border-radius: 5px 5px 0 0;
+}
+
+.confirmation-message__container h3 {
+  width: 100%;
+  text-align: center;
+}
+
+.confirmation-message__close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-inline: 0.5rem;
+  cursor: pointer;
+}
+
+.confirmation-message__container p,
+.confirmation-message__list {
+  margin-left: 1rem;
+}
+@media all and (min-width: 18.75em) {
+  .confirmation-message__container p,
+  .confirmation-message__list {
+    margin-left: 1.5rem;
+  }
+}
+@media all and (min-width: 28.125em) {
+  .confirmation-message__container p,
+  .confirmation-message__list {
+    margin-left: 2rem;
+  }
+}
+@media all and (min-width: 36em) {
+  .confirmation-message__container p,
+  .confirmation-message__list {
+    margin-left: 2.5rem;
+  }
+}
+@media all and (min-width: 48em) {
+  .confirmation-message__container p,
+  .confirmation-message__list {
+    margin-left: 3rem;
+  }
+}
+
+.confirmation-message__container p,
+.confirmation-message__list li:nth-of-type(even) {
+  margin-right: 1rem;
+}
+@media all and (min-width: 18.75em) {
+  .confirmation-message__container p,
+  .confirmation-message__list li:nth-of-type(even) {
+    margin-right: 1.5rem;
+  }
+}
+@media all and (min-width: 28.125em) {
+  .confirmation-message__container p,
+  .confirmation-message__list li:nth-of-type(even) {
+    margin-right: 2rem;
+  }
+}
+@media all and (min-width: 36em) {
+  .confirmation-message__container p,
+  .confirmation-message__list li:nth-of-type(even) {
+    margin-right: 2.5rem;
+  }
+}
+@media all and (min-width: 48em) {
+  .confirmation-message__container p,
+  .confirmation-message__list li:nth-of-type(even) {
+    margin-right: 3rem;
+  }
+}
+
+.confirmation-message__container p {
+  padding-top: 1rem;
+  padding-bottom: 0.25rem;
+}
+@media all and (min-width: 36em) {
+  .confirmation-message__container p {
+    padding-top: 1.25rem;
+    padding-bottom: 0.375rem;
+  }
+}
+@media all and (min-width: 48em) {
+  .confirmation-message__container p {
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.confirmation-message__list {
+  height: auto;
+  max-height: 40vh;
+  max-height: 40dvh;
+  max-height: 40svh;
+  overflow: auto;
+  padding-bottom: 1.25rem;
+}
+@media all and (min-width: 36em) {
+  .confirmation-message__list {
+    display: grid;
+    grid-template-rows: repeat(7, auto);
+    grid-template-columns: repeat(2, auto);
+    -webkit-column-gap: 0.75rem;
+       -moz-column-gap: 0.75rem;
+            column-gap: 0.75rem;
+    row-gap: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    text-align: left;
+    height: auto;
+    max-height: 90%;
+    padding-bottom: 1.75rem;
+  }
+}
+@media all and (min-width: 48em) {
+  .confirmation-message__list {
+    padding-bottom: 2rem;
+  }
+}
+
+.confirmation-message__list li:nth-of-type(even) {
+  padding-bottom: 0.5rem;
+}
+@media all and (min-width: 36em) {
+  .confirmation-message__list li:nth-of-type(even) {
+    padding-bottom: 0;
+  }
+}
+
+#optional-message-value {
+  height: auto;
+  max-height: 12.5rem;
+  overflow: auto;
+}
+
+.confirmation-message__bottom-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.confirmation-message__confirm-button,
+.confirmation-message__cancel-button {
+  width: 50%;
+  border: none;
+  padding-block: 0.5rem;
+  cursor: pointer;
+}
+
+.confirmation-message__confirm-button {
+  border-radius: 0 0 5px 0;
+}
+
+.confirmation-message__cancel-button {
+  border-radius: 0 0 0 5px;
+}
+
+.findus__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+@media all and (min-width: 36em) {
+  .findus__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0;
+  }
+}
+
+.logofont__container {
+  display: none;
+}
+@media all and (min-width: 62em) {
+  .logofont__container {
+    display: block;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 33.33%;
+            flex: 1 0 33.33%;
+  }
+}
+@media all and (min-width: 76.25em) {
+  .logofont__container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 46%;
+            flex: 1 0 46%;
+  }
+}
+@media all and (min-width: 87.5em) {
+  .logofont__container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+}
+
+.contact__container,
+.openhour__container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  width: 100%;
+  margin-inline: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media all and (min-width: 18.75em) {
+  .contact__container,
+  .openhour__container {
+    margin: 0 auto;
+  }
+}
+@media all and (min-width: 36em) {
+  .contact__container,
+  .openhour__container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 47.5%;
+            flex: 1 0 47.5%;
+  }
+}
+@media all and (min-width: 62em) {
+  .contact__container,
+  .openhour__container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 33.33%;
+            flex: 1 0 33.33%;
+  }
+}
+@media all and (min-width: 76.25em) {
+  .contact__container,
+  .openhour__container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 27%;
+            flex: 1 0 27%;
+  }
+}
+@media all and (min-width: 87.5em) {
+  .contact__container,
+  .openhour__container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 25%;
+            flex: 1 0 25%;
+  }
+}
+
+@media all and (min-width: 62em) {
+  .contact__container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media all and (min-width: 62em) {
+  .openhour__container {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.contact__content,
+.openhour__content {
+  max-width: 16.875rem;
+  width: 100%;
+}
+@media all and (min-width: 36em) {
+  .contact__content,
+  .openhour__content {
+    max-width: 20rem;
+    width: 95%;
+  }
+}
+
+.contact__container h2,
+.openhour__container h3 {
+  margin-inline: auto;
+  margin-bottom: 0.7rem;
+  padding-bottom: 0.7rem;
+  text-align: center;
+}
+
+.contact__grid {
+  text-align: center;
+}
+@media all and (min-width: 18.75em) {
+  .contact__grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, auto);
+    -webkit-column-gap: 0.625rem;
+       -moz-column-gap: 0.625rem;
+            column-gap: 0.625rem;
+    row-gap: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    text-align: left;
+  }
+}
+
+.contact__icon:first-of-type {
+  padding-left: 3px;
+}
+
+.openhour__small-grid {
+  text-align: center;
+}
+@media all and (min-width: 18.75em) {
+  .openhour__small-grid {
+    display: none;
+  }
+}
+
+.openhour__small-grid li:nth-of-type(even) {
+  margin-bottom: 0.4rem;
+}
+
+.openhour__large-grid {
+  display: none;
+}
+@media all and (min-width: 18.75em) {
+  .openhour__large-grid {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(2, auto);
+    -webkit-column-gap: 0.625rem;
+       -moz-column-gap: 0.625rem;
+            column-gap: 0.625rem;
+    row-gap: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    text-align: left;
+  }
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.social-icons {
+  margin-bottom: 0.5rem;
+}
+@media all and (min-width: 62em) {
+  .social-icons {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.social-icons a {
+  padding-block: 0.35rem;
+}
+
+.social-icons i {
+  margin: 0.5rem 0.625rem;
+}
+
+/* Font Awesome */
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../assets/webfonts/fontawesome/fa-solid-900.woff2") format("woff2"), url("../assets/webfonts/fontawesome/fa-solid-900.ttf") format("ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/webfonts/fontawesome/fa-brands-400.woff2") format("woff2"), url("../assets/webfonts/fontawesome/fa-brands-400.ttf") format("ttf");
+  font-display: swap;
+}
+/* CSS pseudo-element styling */
+/* general reset/setup styling for icons - needed on all */
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* defining the right font-family/font-face and inherited weight for each style */
+.icon-solid::before {
+  font-family: "Font Awesome 6 Free";
+}
+
+.icon-brand::before {
+  font-family: "Font Awesome 6 Brands";
+}
+
+/* defining the right unicode values for each icon */
+.icon-location::before {
+  content: "\f3c5";
+}
+
+.icon-phone::before {
+  content: "\f095";
+}
+
+.icon-envelope::before {
+  content: "\f0e0";
+}
+
+.icon-meta::before {
+  content: "\e49b";
+}
+
+.icon-twitter::before {
+  content: "\e61b";
+}
+
+.icon-instagram::before {
+  content: "\f16d";
+}
+/*# sourceMappingURL=non-critical-style.css.map */
