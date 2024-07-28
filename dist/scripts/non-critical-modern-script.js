@@ -2,13 +2,16 @@
 
 // ******** VARIABLES ******** //
 
-// Get the elements inside the navbar and the home section
+// Get the elements inside and around the navbar
 const navbar = document.getElementById("navbar");
 const navbarToggler = document.querySelector('.navbar__toggler');
 const navContainer = document.querySelector('.navbar__collapse');
 const navList = document.querySelector('.navbar__nav');
 const navLinks = document.querySelectorAll('.navbar__nav-link');
 const home = document.getElementById("home");
+const r2link = document.querySelector('.navbar__brand');
+const menuTab1 = (document.getElementsByClassName("menu__tab"))[0];
+const accordionButton1 = (document.getElementsByClassName("accordion__button"))[0];
 let screenWidth, currentScrollPos;
 
 
@@ -75,11 +78,10 @@ window.addEventListener('scroll', debounce(() => {
   prevScrollPos = currentScrollPos;
 }, 50));
 
+// Keydown event when the menu is a collapsible navbar on small screen and is open
 window.addEventListener('keydown', (event) => {
   const focusedElement = document.activeElement;
   const isNavLinkFocused = Array.prototype.includes.call(navLinks, focusedElement);
-  const menuTab1 = (document.getElementsByClassName("menu__tab"))[0];
-  const accordionButton1 = (document.getElementsByClassName("accordion__button"))[0];
   if (navContainer.classList.contains('is-opened')) {
     switch (event.key) {
       // Close the open navbar menu by ESC key
@@ -129,11 +131,10 @@ window.addEventListener('keydown', (event) => {
   }
 });
 
+// Keydown event when the menu is a menu bar on large screen
 window.addEventListener('keydown', (event) => {
   const focusedElement = document.activeElement;
   const isNavLinkFocused = Array.prototype.includes.call(navLinks, focusedElement);
-  const r2link = document.querySelector('.navbar__brand');
-  const menuTab1 = (document.getElementsByClassName("menu__tab"))[0];
   if (isNavLinkFocused) {
     switch (event.key) {
       case 'Tab':
@@ -175,6 +176,25 @@ window.addEventListener('keydown', (event) => {
   }
 });
 
+menuTab1.addEventListener('keydown', (event) => {
+  switch (event.key) {
+    case 'Tab':
+      if (event.shiftKey) {
+        navbar.style.top = "0";
+      }
+      break;
+  }
+})
+
+accordionButton1.addEventListener('keydown', (event) => {
+  switch (event.key) {
+    case 'Tab':
+      if (event.shiftKey) {
+        navbar.style.top = "0";
+      }
+      break;
+  }
+})
 
 // ******** FUNCTIONS ******** //
 
