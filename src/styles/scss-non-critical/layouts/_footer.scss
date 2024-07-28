@@ -1,0 +1,13 @@
+@use '../../scss-common-partials/mixins' as *;
+
+footer {
+    padding-block: 2rem;
+
+    @include min-mq (md) {
+        padding-block: 2.25rem;
+    }
+
+    @include min-mq (lg) {
+        padding-block: 2.5rem;
+    }
+}

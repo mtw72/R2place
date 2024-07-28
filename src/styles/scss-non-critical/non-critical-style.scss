@@ -1,0 +1,8 @@
+@use './partials/index' as *;
+@use '../scss-common-partials/index' as *;
+@use './layouts/index' as *;
+@use './sections/index' as *;
+@use './vendor/index' as *;
+// @use '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss' as *; (using npm and gulp)
+// @use '../../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss' as *;
+// @use '../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss' as *;

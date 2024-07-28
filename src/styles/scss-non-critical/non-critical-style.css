@@ -1,0 +1,732 @@
+/* Caption text */
+.small-menu__image-description {
+  background-color: rgb(229, 186, 115);
+  color: rgb(243, 243, 243);
+  border-top: 1px solid rgb(229, 186, 115);
+}
+
+.small-menu__slideshow-button--prev,
+.small-menu__slideshow-button--next {
+  color: rgb(229, 186, 115);
+}
+
+.carousel__progress {
+  background-color: rgb(255, 231, 204);
+}
+
+.carousel__progress:hover,
+.slideshow-dot--active {
+  background-color: rgb(248, 203, 166);
+}
+
+.reservation__photo img {
+  border: 1px solid rgb(222, 226, 230);
+  background-color: rgb(255, 255, 255);
+}
+
+.mandatory-field {
+  color: rgb(255, 0, 0);
+}
+
+.input-control {
+  color: rgb(33, 37, 41);
+}
+
+.textarea-control {
+  color: rgba(33, 37, 41, 0.7);
+}
+
+.input-control,
+.textarea-control,
+select {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(206, 212, 218);
+}
+
+/* change textarea color when the user is typing */
+.textarea-control.input {
+  color: rgb(0, 0, 0);
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid rgb(0, 0, 0);
+  outline: 1px solid rgb(0, 0, 0);
+}
+
+.error-input {
+  border: 1px solid rgb(255, 0, 0);
+  outline: 1px solid rgb(255, 0, 0);
+}
+
+.error-message {
+  color: rgb(255, 0, 0);
+}
+
+.reservation__submit-button {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 1px rgb(102, 102, 102);
+}
+
+.reservation__submit-button:hover {
+  outline: 3px solid rgb(255, 165, 0);
+}
+
+.reservation__submit-button:focus {
+  outline: 3px solid rgb(255, 165, 0);
+}
+
+.findus h2 {
+  border-bottom: 4px dotted rgb(206, 212, 218);
+}
+
+.contact__icon {
+  color: rgb(119, 119, 119);
+}
+
+/* links for 
+contacts in findus and
+social icons in footer  */
+.g-link {
+  color: rgb(174, 96, 0);
+}
+
+.g-link:hover {
+  color: rgb(224, 177, 120);
+}
+
+.g-link:active {
+  color: rgb(233, 205, 171);
+}
+
+.small-menu__image-description {
+  font-size: 1.3rem;
+}
+
+.input-control,
+.textarea-control,
+select {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: inherit;
+}
+
+.reservation__submit-button {
+  font-size: 1.25rem;
+  font-family: inherit;
+}
+
+.findus h2 {
+  font-size: clamp(1.5rem, 1rem + 1.5vw, 2rem);
+  font-weight: 400;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.skip-link {
+  position: absolute;
+  left: 50%;
+  top: 2px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  transform: translateX(-50%);
+}
+
+.skip-link:focus {
+  position: fixed;
+  width: auto;
+  height: auto;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+}
+
+.webp,
+.temp-img {
+  max-width: 100px;
+  width: 90%;
+  height: auto;
+}
+
+.navbar {
+  z-index: 100;
+}
+
+.hero-text {
+  z-index: 10;
+}
+
+.skip-link:focus {
+  z-index: 1000;
+}
+
+.reservation__form {
+  max-width: 18.75rem;
+  margin-inline: auto;
+}
+
+@media all and (min-width: 28.125em) {
+  .reservation__form {
+    max-width: 26.5625rem;
+  }
+}
+
+@media all and (min-width: 36em) {
+  .reservation__form {
+    max-width: 37.5rem;
+  }
+}
+
+@media all and (min-width: 48em) {
+  .reservation__form {
+    max-width: 50rem;
+  }
+}
+
+@media all and (min-width: 62em) and (max-width: 78.12375em) {
+  .reservation__form {
+    max-width: 62.5rem;
+  }
+}
+
+.reservation__form>div {
+  max-width: 18.75rem;
+}
+
+@media all and (min-width: 28.125em) {
+  .reservation__form>div {
+    max-width: 26.5625rem;
+  }
+}
+
+@media all and (min-width: 36em) {
+  .reservation__form>div {
+    max-width: 100%;
+  }
+}
+
+section.findus {
+  padding-block: 2rem;
+}
+
+@media all and (min-width: 78.125em) {
+  section.findus {
+    padding-block: 3.5rem;
+  }
+}
+
+.findus__container {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+}
+
+@media all and (min-width: 28.125em) {
+  .findus__container {
+    max-width: 26.5625rem;
+  }
+}
+
+@media all and (min-width: 36em) {
+  .findus__container {
+    max-width: 37.5rem;
+    flex-direction: row;
+  }
+}
+
+@media all and (min-width: 48em) {
+  .findus__container {
+    max-width: 50rem;
+  }
+}
+
+@media all and (min-width: 62em) {
+  .findus__container {
+    max-width: 62.5rem;
+  }
+}
+
+@media all and (min-width: 78.125em) {
+  .findus__container {
+    max-width: 93.75rem;
+  }
+}
+
+/* Slideshow container */
+.carousel__track-container {
+  position: relative;
+  margin: auto;
+  margin-top: 1.5625rem;
+  max-width: 21.875rem;
+}
+
+/* Hide the images by default */
+.small-menu__slide {
+  display: none;
+}
+
+.small-menu__slide img {
+  display: block;
+  margin-inline: auto;
+  width: 85%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.small-menu__image-description {
+  margin-inline: auto;
+  padding: 0.375rem 0.75rem;
+  width: 85%;
+  max-width: 21.875rem;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+}
+
+.small-menu__slideshow-button--prev,
+.small-menu__slideshow-button--next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.6s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: 0;
+  background-color: transparent;
+}
+
+.small-menu__slideshow-button--prev {
+  left: -4px;
+}
+
+.small-menu__slideshow-button--next {
+  right: -4px;
+}
+
+@media all and (min-width: 28.125em) {
+
+  .small-menu__slideshow-button--prev,
+  .small-menu__slideshow-button--next {
+    top: 42%;
+    font-size: 1.25rem;
+    transition: 0.6s ease;
+    padding: 1rem;
+  }
+
+  .small-menu__slideshow-button--prev {
+    left: -30px;
+  }
+
+  .small-menu__slideshow-button--next {
+    right: -30px;
+  }
+}
+
+/* The dots indicators */
+.small-menu__slideshow-dots {
+  text-align: center;
+  margin-top: 0.75rem;
+}
+
+.small-menu__slideshow-dot {
+  cursor: pointer;
+  height: 0.425rem;
+  width: 0.425rem;
+  margin: 0 3px;
+  border-radius: 100%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border: none;
+}
+
+/* Fading animation */
+.small-menu__slide--fade {
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (min-width: 78.125em) {
+  .reservation {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 2.5rem;
+  }
+}
+
+.reservation__form {
+  display: grid;
+  grid-template-rows: repeat(6, auto) repeat(2, auto);
+  row-gap: 0.625rem;
+}
+
+@media all and (min-width: 36em) {
+  .reservation__form {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto) repeat(2, auto);
+    gap: 1.25rem;
+  }
+}
+
+@media all and (min-width: 62em) and (max-width: 78.12375em) {
+  .reservation__form {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto) repeat(2, auto);
+  }
+}
+
+@media all and (min-width: 36em) {
+  .reservation__form--name {
+    grid-area: 1/1/2/2;
+  }
+
+  .reservation__form--phone {
+    grid-area: 1/2/2/3;
+  }
+
+  .reservation__form--email {
+    grid-area: 2/1/3/2;
+  }
+
+  .reservation__form--guest-number {
+    grid-area: 2/2/3/3;
+  }
+
+  .reservation__form--date {
+    grid-area: 3/1/4/2;
+  }
+
+  .reservation__time {
+    grid-area: 3/2/4/3;
+  }
+
+  .reservation__optional-message {
+    grid-area: 4/1/5/3;
+  }
+
+  .reservation__bottom-part {
+    grid-area: 5/1/6/3;
+  }
+}
+
+@media all and (min-width: 62em) and (max-width: 78.12375em) {
+  .reservation__form--email {
+    grid-area: 1/3/2/4;
+  }
+
+  .reservation__form--guest-number {
+    grid-area: 2/1/3/2;
+  }
+
+  .reservation__form--date {
+    grid-area: 2/2/3/3;
+  }
+
+  .reservation__time {
+    grid-area: 2/3/3/4;
+  }
+
+  .reservation__optional-message {
+    grid-area: 3/1/5/4;
+  }
+
+  .reservation__bottom-part {
+    grid-area: 5/1/6/4;
+  }
+}
+
+#reservation h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media all and (min-width: 28.125em) {
+  #reservation h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+@media all and (min-width: 48em) {
+  #reservation h1 {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media all and (min-width: 62em) {
+  #reservation h1 {
+    margin-bottom: 3rem;
+  }
+}
+
+@media all and (min-width: 78.125em) {
+  #reservation h1 {
+    margin-bottom: 3.5rem;
+  }
+}
+
+.reservation__photo {
+  display: none;
+}
+
+@media all and (min-width: 28.125em) {
+  .reservation__photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media all and (min-width: 78.125em) {
+  .reservation__photo {
+    padding-bottom: 5.5rem;
+    justify-content: flex-start;
+  }
+}
+
+.reservation__photo img {
+  max-width: 26.5625rem;
+  max-height: 25rem;
+  width: 100%;
+  height: auto;
+  border-radius: 0.375rem;
+  padding: 0.25rem;
+}
+
+@media all and (min-width: 36em) {
+  .reservation__photo img {
+    max-width: 37.5rem;
+    max-height: 25rem;
+  }
+}
+
+.input-control,
+.select-control {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  padding: 0.375rem 0.75rem;
+  background-clip: padding-box;
+  border-radius: 0.375rem;
+}
+
+.textarea-control {
+  display: block;
+  width: 100%;
+  height: 6rem;
+  padding: 0.375rem 0.75rem;
+  background-clip: padding-box;
+  border-radius: 0.375rem;
+}
+
+@media all and (min-width: 62em) {
+  .textarea-control {
+    height: 7.5rem;
+  }
+}
+
+.reservation__bottom-part p {
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  display: none;
+}
+
+.reservation__submit-button {
+  padding: 0.625rem 1rem;
+  border: none;
+  border-radius: 10px;
+  float: right;
+  cursor: pointer;
+}
+
+.logofont__container {
+  display: none;
+}
+
+@media all and (min-width: 62em) {
+  .logofont__container {
+    display: block;
+    flex: 1 0 33.33%;
+  }
+}
+
+@media all and (min-width: 78.125em) {
+  .logofont__container {
+    flex: 1 0 50%;
+  }
+}
+
+.contact__container,
+.openhour__container {
+  flex: 1 0 100%;
+  width: 100%;
+  margin: 0.5rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+@media all and (min-width: 18.75em) {
+
+  .contact__container,
+  .openhour__container {
+    margin: 0 auto;
+  }
+}
+
+@media all and (min-width: 36em) {
+
+  .contact__container,
+  .openhour__container {
+    flex: 1 0 47.5%;
+  }
+}
+
+@media all and (min-width: 62em) {
+
+  .contact__container,
+  .openhour__container {
+    flex: 1 0 33.33%;
+  }
+}
+
+@media all and (min-width: 78.125em) {
+
+  .contact__container,
+  .openhour__container {
+    flex: 1 0 25%;
+  }
+}
+
+@media all and (min-width: 62em) {
+  .contact__container {
+    justify-content: flex-start;
+  }
+}
+
+@media all and (min-width: 18.75em) and (max-width: 35.99875em) {
+  .openhour__container {
+    padding-top: 2rem;
+  }
+}
+
+@media all and (min-width: 62em) {
+  .openhour__container {
+    justify-content: flex-end;
+  }
+}
+
+.contact__content,
+.openhour__content {
+  max-width: 16.875rem;
+  width: 100%;
+}
+
+@media all and (min-width: 36em) {
+
+  .contact__content,
+  .openhour__content {
+    max-width: 20rem;
+    width: 95%;
+  }
+}
+
+.findus h2 {
+  margin-inline: auto;
+  margin-bottom: 0.7rem;
+  padding-bottom: 0.7rem;
+  text-align: center;
+}
+
+.contact__grid {
+  text-align: center;
+}
+
+@media all and (min-width: 18.75em) {
+  .contact__grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, auto);
+    -moz-column-gap: 0.625rem;
+    column-gap: 0.625rem;
+    row-gap: 0;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+  }
+}
+
+.contact__icon--location {
+  padding-left: 3px;
+}
+
+.openhour__small-grid {
+  text-align: center;
+}
+
+@media all and (min-width: 18.75em) {
+  .openhour__small-grid {
+    display: none;
+  }
+}
+
+.openhour__small-grid li:nth-of-type(even) {
+  margin-bottom: 0.4rem;
+}
+
+.openhour__large-grid {
+  display: none;
+}
+
+@media all and (min-width: 18.75em) {
+  .openhour__large-grid {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(2, auto);
+    -moz-column-gap: 0.625rem;
+    column-gap: 0.625rem;
+    row-gap: 0;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-block: calc(1rem + 1.5vw);
+}
+
+.social-icons i {
+  margin: 0.5rem 0.625rem 1.25rem 0.625rem;
+}
+
+/*# sourceMappingURL=non-critical-style.css.map */

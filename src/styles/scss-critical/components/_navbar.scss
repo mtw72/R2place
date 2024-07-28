@@ -1,0 +1,130 @@
+@use '../../scss-common-partials/functions' as f;
+@use '../../scss-common-partials/mixins' as *;
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 0.75rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+
+    @include min-mq(sm) {
+        padding-block: 0.25rem;
+    }
+
+    @include min-mq (lg) {
+        padding-block: 0.5rem;
+    }
+}
+
+.navbar__container {
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1rem;
+
+    @include min-mq (md) {
+        padding-inline: 1.5rem;
+    }
+
+    @include min-mq (xl) {
+        padding-inline: 2rem;
+    }
+}
+
+.navbar__brand {
+    text-decoration: none;
+    white-space: nowrap;
+    align-items: center;
+
+    @include min-mq(sm) {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+.navbar__toggler {
+    padding: 0.5rem;
+    line-height: 1;
+    border-radius: 0.25rem;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:focus {
+        text-decoration: none;
+    }
+
+    @include min-mq(sm) {
+        display: none;
+    }
+}
+
+.navbar__collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+
+    @include min-mq(sm) {
+        display: flex;
+        justify-content: flex-end;
+        flex-basis: 0;
+        flex-grow: 1;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        min-height: f.rem(75);
+    }
+}
+
+.navbar__nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+    @include min-mq(sm) {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        margin-right: 2px;
+    }
+}
+
+.navbar__nav-link {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__nav-item {
+    padding-block: 1rem;
+    padding-right: 0;
+    text-align: center;
+
+    @include min-mq(sm) {
+        padding-left: 1.5rem;
+    }
+
+    @include min-mq(lg) {
+        padding-left: 2rem;
+        padding-block: 0;
+    }
+}

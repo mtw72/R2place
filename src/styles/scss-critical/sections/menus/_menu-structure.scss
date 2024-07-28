@@ -1,0 +1,43 @@
+@use '../../../scss-common-partials/functions' as f;
+@use '../../../scss-common-partials/mixins' as *;
+
+// menu on small screen (xxxs to xs) : accordion + carousel
+// menu on medium screen (xs to md): menu tab & content, w/o photos, + carousel
+// menu on large screen (md to xl): menu tab & content, w/ photos
+
+.carousel {
+    display: block;
+
+    @include min-mq(md) {
+        display: none;
+    }
+}
+
+.menu {
+    display: none;
+}
+
+@include min-mq (xs) {
+
+    /* hide the small menu, show the large menu */
+    .menu__item:nth-of-type(3) {
+        border-bottom: 0;
+    }
+
+    .accordion {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    /* rounded border menu on wider screen */
+    .menu__tab {
+        border-radius: 25px 25px 0 0;
+    }
+
+    .menu__panel {
+        border-radius: 0 0 25px 25px;
+    }
+}

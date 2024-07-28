@@ -1,0 +1,44 @@
+@use '../../scss-common-partials/variables' as *;
+@use '../../scss-common-partials/functions' as f;
+@use '../../scss-common-partials/mixins' as *;
+
+section.findus {
+    padding-block: 2rem;
+
+    @include min-mq (md) {
+        padding-block: 2.5rem;
+    }
+
+    @include min-mq (lg) {
+        padding-block: 3rem;
+    }
+
+    @include min-mq (xl) {
+        padding-block: 3.5rem;
+    }
+}
+
+// for whole page vertical alignment
+.findus__container {
+    margin-inline: auto;
+
+    @include min-mq (xs) {
+        max-width: f.rem($mw-xs);
+    }
+
+    @include min-mq (sm) {
+        max-width: f.rem($mw-sm);
+    }
+
+    @include min-mq (md) {
+        max-width: f.rem($mw-md);
+    }
+
+    @include min-mq (lg) {
+        max-width: f.rem($mw-lg);
+    }
+
+    @include min-mq (xl) {
+        max-width: f.rem($mw-xl);
+    }
+}

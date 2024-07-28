@@ -1,0 +1,36 @@
+@use '../../scss-common-partials/variables' as *;
+@use '../../scss-common-partials/functions' as f;
+@use '../../scss-common-partials/mixins' as *;
+
+
+// for whole page vertical alignment
+.accordion {
+    max-width: 100%;
+    margin-inline: auto;
+
+    @include min-mq (xxs) {
+        max-width: f.rem($mw-xxs);
+    }
+}
+
+.menu {
+    max-width: f.rem($mw-xs);
+    margin-inline: auto;
+
+    @include min-mq (sm) {
+        max-width: f.rem($mw-sm);
+    }
+
+    @include min-mq (md) {
+        max-width: f.rem($mw-md);
+    }
+
+    @include min-mq (lg) {
+        max-width: f.rem($mw-lg);
+    }
+
+    // optimum width for large menu
+    @include min-mq (xxl) {
+        max-width: f.rem($mw-large-menu);
+    }
+}

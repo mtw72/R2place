@@ -1,0 +1,77 @@
+// // Font Awesome (using npm and gulp)
+// $fa-font-path: "../../../../node_modules/@fortawesome/fontawesome-free/webfonts";
+
+/* Font Awesome */
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../assets/webfonts/fontawesome/fa-solid-900.woff2') format('woff2'),
+        url('../assets/webfonts/fontawesome/fa-solid-900.ttf') format('ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Brands';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/webfonts/fontawesome/fa-brands-400.woff2') format('woff2'),
+        url('../assets/webfonts/fontawesome/fa-brands-400.ttf') format('ttf');
+    font-display: swap;
+}
+
+/* CSS pseudo-element styling */
+/* general reset/setup styling for icons - needed on all */
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* defining the right font-family/font-face and inherited weight for each style */
+.icon-solid::before {
+    font-family: "Font Awesome 6 Free";
+}
+
+.icon-brand::before {
+    font-family: "Font Awesome 6 Brands";
+}
+
+// .icon-regular::before {
+//   font: $fa-font-regular;
+// }
+
+// .icon-light::before {
+//   font: $fa-font-light;
+// }
+
+// .icon-thin::before {
+//   font: $fa-font-thin;
+// }
+
+/* defining the right unicode values for each icon */
+.icon-location::before {
+    content: "\f3c5";
+}
+
+.icon-phone::before {
+    content: "\f095";
+}
+
+.icon-envelope::before {
+    content: "\f0e0";
+}
+
+.icon-meta::before {
+    content: "\e49b";
+}
+
+.icon-twitter::before {
+    content: "\e61b";
+}
+
+.icon-instagram::before {
+    content: "\f16d";
+}

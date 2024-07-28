@@ -1,0 +1,38 @@
+@use '../../scss-common-partials/variables' as *;
+@use '../../scss-common-partials/functions' as f;
+@use '../../scss-common-partials/mixins' as *;
+
+// for whole page vertical alignment
+.reservation__form {
+    max-width: f.rem($mw-xxs);
+    margin-inline: auto;
+
+    @include min-mq (xs) {
+        max-width: f.rem($mw-xs);
+    }
+
+    @include min-mq (sm) {
+        max-width: f.rem($mw-sm);
+    }
+
+    @include min-mq (md) {
+        max-width: f.rem($mw-md);
+    }
+
+    // between lg and xl, showing 3 columns
+    @include between-mq (lg, xl) {
+        max-width: f.rem($mw-lg);
+    }
+}
+
+.reservation__form>div {
+    max-width: f.rem($mw-xxs);
+
+    @include min-mq (xs) {
+        max-width: f.rem($mw-xs);
+    }
+
+    @include min-mq (sm) {
+        max-width: 100%;
+    }
+}

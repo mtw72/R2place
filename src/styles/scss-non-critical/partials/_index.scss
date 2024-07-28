@@ -1,0 +1,8 @@
+@use './colors' as *;
+@use './typography' as *;
+
+
+
+
+@forward '../partials/colors';
+@forward '../partials/typography';

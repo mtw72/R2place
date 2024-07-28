@@ -1,0 +1,25 @@
+@use '../../scss-common-partials/mixins' as *;
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social-icons {
+    margin-bottom: 0.5rem;
+
+    @include min-mq (lg) {
+        margin-bottom: 0.75rem;
+    }
+}
+
+.social-icons a {
+    padding-block: 0.35rem;
+}
+
+.social-icons i {
+    margin: 0.5rem 0.625rem;
+}

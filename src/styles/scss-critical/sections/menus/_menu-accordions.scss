@@ -1,0 +1,82 @@
+@use '../../../scss-common-partials/functions' as f;
+
+//buttons when the accordion panel is close
+.accordion__button {
+    padding: 0.8rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    cursor: pointer;
+
+    //"plus" sign (+) 
+    &:after {
+        content: '\002B';
+        float: right;
+    }
+
+    &:focus {
+        transition: 0s;
+    }
+}
+
+.accordion__button:not(:first-of-type) {
+    margin-top: 1rem;
+}
+
+//buttons when the accordion panel is open
+// "minus" sign (-)
+.accordion__button--active:after {
+    content: "\2212";
+}
+
+.accordion__button h3 {
+    display: inline;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.accordion__panel {
+    padding: 0 0.5rem;
+    overflow: hidden;
+    max-height: 0;
+    border-top: 0;
+    transition: max-height 0.25s ease-out;
+}
+
+.accordion__content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    column-gap: f.rem(5);
+    row-gap: 0px;
+    padding-block: 0.5rem;
+}
+
+.accordion__item--1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.accordion__item-price--1 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.accordion__item--2 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.accordion__item-price--2 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.accordion__item--3 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.accordion__item-price--3 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.accordion__item-price {
+    justify-self: end;
+}

@@ -1,0 +1,164 @@
+@use '../../../scss-common-partials/variables' as *;
+@use '../../../scss-common-partials/functions' as f;
+@use '../../../scss-common-partials/mixins' as *;
+
+.confirmation-message__container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.confirmation-message__content {
+    border: none;
+    width: auto;
+    max-width: 90%;
+    border-radius: 5px;
+
+    @include min-mq(sm) {
+        max-width: auto;
+    }
+}
+
+.confirmation-message__container header {
+    position: relative;
+    border-radius: 5px 5px 0 0;
+}
+
+.confirmation-message__container h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.confirmation-message__close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-inline: 0.5rem;
+    cursor: pointer;
+}
+
+.confirmation-message__container p,
+.confirmation-message__list {
+    margin-left: 1rem;
+
+    @include min-mq(xxs) {
+        margin-left: 1.5rem;
+    }
+
+    @include min-mq(xs) {
+        margin-left: 2rem;
+    }
+
+    @include min-mq(sm) {
+        margin-left: 2.5rem;
+    }
+
+    @include min-mq(md) {
+        margin-left: 3rem;
+    }
+
+}
+
+.confirmation-message__container p,
+.confirmation-message__list li:nth-of-type(even) {
+    margin-right: 1rem;
+
+    @include min-mq(xxs) {
+        margin-right: 1.5rem;
+    }
+
+    @include min-mq(xs) {
+        margin-right: 2rem;
+    }
+
+    @include min-mq(sm) {
+        margin-right: 2.5rem;
+    }
+
+    @include min-mq(md) {
+        margin-right: 3rem;
+    }
+
+}
+
+.confirmation-message__container p {
+    padding-top: 1rem;
+    padding-bottom: 0.25rem;
+
+    @include min-mq(sm) {
+        padding-top: 1.25rem;
+        padding-bottom: 0.375rem;
+    }
+
+    @include min-mq(md) {
+        padding-top: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+.confirmation-message__list {
+    height: auto;
+    max-height: 40vh;
+    max-height: 40dvh;
+    max-height: 40svh;
+    overflow: auto;
+    padding-bottom: 1.25rem;
+
+    @include min-mq(sm) {
+        display: grid;
+        grid-template-rows: repeat(7, auto);
+        grid-template-columns: repeat(2, auto);
+        column-gap: f.rem(12);
+        row-gap: 0;
+        justify-content: center;
+        align-items: start;
+        text-align: left;
+        height: auto;
+        max-height: 90%;
+        padding-bottom: 1.75rem;
+    }
+
+    @include min-mq(md) {
+        padding-bottom: 2rem;
+    }
+}
+
+.confirmation-message__list li:nth-of-type(even) {
+    padding-bottom: 0.5rem;
+
+    @include min-mq(sm) {
+        padding-bottom: 0;
+    }
+}
+
+#optional-message-value {
+    height: auto;
+    max-height: f.rem(200);
+    overflow: auto;
+}
+
+.confirmation-message__bottom-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.confirmation-message__confirm-button,
+.confirmation-message__cancel-button {
+    width: 50%;
+    border: none;
+    padding-block: 0.5rem;
+    cursor: pointer;
+}
+
+.confirmation-message__confirm-button {
+    border-radius: 0 0 5px 0;
+}
+
+.confirmation-message__cancel-button {
+    border-radius: 0 0 0 5px;
+}

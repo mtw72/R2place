@@ -1,0 +1,53 @@
+@use '../../scss-common-partials/functions' as f;
+@use '../../scss-common-partials/mixins' as *;
+
+#home {
+    // mq (0-350 & 450-600), padding-top : 70px 
+    padding-top: f.rem(70);
+    position: relative;
+    transition: 0.5s;
+
+    @include custom-between-mq (350, 449.5) {
+        padding-top: 0;
+    }
+
+    @include min-mq (sm) {
+        padding-top: 0;
+    }
+}
+
+#home img,
+#home source {
+    max-width: 100%;
+}
+
+#home img {
+    overflow: clip;
+    vertical-align: middle;
+    height: auto;
+
+    @include custom-max-mq (449.5) {
+        min-width: f.rem(250);
+        width: 100%;
+        max-width: f.rem(449.5);
+    }
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+
+    @include min-mq (sm) {
+        bottom: 5%;
+        left: 3%;
+    }
+}
+
+.hero-text p {
+    display: none;
+
+    @include min-mq (sm) {
+        display: block;
+    }
+}

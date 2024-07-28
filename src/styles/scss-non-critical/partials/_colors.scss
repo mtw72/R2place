@@ -1,0 +1,172 @@
+@use '../../scss-common-partials/variables' as *;
+@use '../../scss-common-partials/mixins' as *;
+
+// carousel
+/* Caption text */
+.carousel__image-description {
+    background-color: $brown-7;
+    color: $yellow-2;
+    border-top: 1px solid $brown-7;
+}
+
+//Next & previous buttons
+.carousel__prev-button,
+.carousel__next-button {
+    color: $brown-2;
+}
+
+.carousel__progress-container {
+    background-color: transparent;
+}
+
+.current-container,
+.carousel__progress-bar {
+    background-color: $orange-4;
+}
+
+.carousel__progress-list:focus,
+.current-bar:focus {
+    outline: 2px solid $orange-2;
+}
+
+.current-bar,
+.finished-bar {
+    background-color: $brown-4;
+}
+
+// reservation-form
+.reservation__photo img {
+    background-color: $white-1;
+    border: 1px solid $white-3;
+}
+
+.mandatory-field {
+    color: $red-1;
+}
+
+.input-control {
+    color: $black-2;
+}
+
+.textarea-control {
+    color: $black-2a;
+}
+
+.input-control,
+.textarea-control,
+select {
+    background-color: $white-1;
+    border: 1px solid $grey-2;
+}
+
+/* change textarea color when the user is typing */
+.textarea-control.input {
+    color: $black-1;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: 1px solid $orange-2;
+    outline: 1px solid $orange-2;
+    background-color: $white-1;
+}
+
+select {
+    color: $black-2a;
+}
+
+select.valid {
+    color: $black-1;
+}
+
+#guest-number option:not(first-of-type),
+#time option {
+    color: $black-1;
+}
+
+#guest-number option:first-of-type,
+#time #time-first-option {
+    color: $black-2a;
+}
+
+.error-input {
+    border: 1px solid $red-1;
+    outline: 1px solid $red-1;
+}
+
+.error-message {
+    color: $red-1;
+}
+
+.reservation__submit-button {
+    background-color: $brown-1;
+    color: $yellow-2;
+    box-shadow: 1px 1px 1px $brown-6;
+
+    &:hover {
+        outline: 3px solid $orange-2;
+    }
+
+    &:focus {
+        outline: 3px solid $orange-2;
+    }
+}
+
+// confirmation message
+.confirmation-message__container {
+    background-color: $grey-6a;
+}
+
+.confirmation-message__content {
+    background-color: $white-1;
+    box-shadow: 0px 0px 3px $grey-5;
+}
+
+.confirmation-message__container header {
+    background-color: $yellow-2;
+    color: $black-1;
+}
+
+.confirmation-message__close-button {
+
+    &:focus {
+        outline: 2px solid $orange-2;
+    }
+}
+
+.confirmation-message__confirm-button {
+    background-color: $brown-1;
+    color: $yellow-2;
+}
+
+.confirmation-message__cancel-button {
+    background-color: $grey-2;
+    color: $black-1;
+}
+
+// findus
+.contact__container h2,
+.openhour__container h3 {
+    border-bottom: 4px dotted $grey-2;
+}
+
+.contact__icon {
+    color: $grey-3;
+}
+
+/* links for 
+contacts in findus and
+social icons in footer  */
+.g-link {
+    color: $brown-8;
+}
+
+.g-link:hover {
+    color: $brown-8a;
+    border-bottom: 2px solid $brown-8a;
+}
+
+.g-link:active {
+    color: $brown-6;
+}

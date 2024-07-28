@@ -1,0 +1,60 @@
+@use '../../scss-common-partials/variables' as *;
+@use '../../scss-common-partials/fonts' as *;
+@use '../../scss-common-partials/mixins' as *;
+@use './colors' as *;
+
+// carousel text
+.carousel__image-description {
+    font-size: 1.3rem;
+}
+
+// reservation form
+.input-control,
+.textarea-control,
+select {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: inherit;
+}
+
+.reservation__submit-button {
+
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+// confirmation message
+.confirmation-message__container header {
+    font-size: clamp(1.5rem, 1rem + 1.5vw, 2rem);
+}
+
+.confirmation-message__close-button {
+
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+.confirmation-message__list li:nth-of-type(even) {
+    text-decoration: 1px underline $grey-6;
+    text-underline-position: under;
+
+    @include min-mq(sm) {
+        text-decoration: none;
+    }
+}
+
+.confirmation-message__bottom-button {
+
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+// findus
+.contact__container h2,
+.openhour__container h3 {
+    font-size: clamp(1.5rem, 1rem + 1.5vw, 2rem);
+}

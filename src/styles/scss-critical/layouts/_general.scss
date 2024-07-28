@@ -1,0 +1,30 @@
+@use '../../scss-common-partials/variables' as *;
+@use '../../scss-common-partials/functions' as f;
+@use '../../scss-common-partials/mixins' as *;
+
+// styling the section container for menu, reservation and findus
+section:not(:first-of-type) {
+    width: calc(100% - 2rem);
+    margin-inline: auto;
+    padding-block: 2.5rem;
+
+    @include min-mq (xs) {
+        width: min(100% - 4rem, f.rem(800));
+        padding-block: 3rem;
+    }
+
+    @include min-mq (md) {
+        width: min(100% - 4rem, f.rem(950));
+        padding-block: 4rem;
+    }
+
+    @include min-mq (lg) {
+        width: min(100% - 5rem, f.rem(1150));
+        padding-block: 5rem;
+    }
+
+    @include min-mq (xl) {
+        width: min(100% - 6rem, f.rem($mw-xl)); //mainly for reservation and findus
+        padding-block: 6rem 8.5rem;
+    }
+}

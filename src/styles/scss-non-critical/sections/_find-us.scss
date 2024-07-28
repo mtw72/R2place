@@ -1,0 +1,138 @@
+@use '../../scss-common-partials/functions' as f;
+@use '../../scss-common-partials/mixins' as *;
+
+.findus__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @include min-mq (sm) {
+        flex-direction: row;
+        gap: 0;
+    }
+}
+
+.logofont__container {
+    display: none;
+
+    @include min-mq (lg) {
+        display: block;
+        flex: 1 0 33.33%;
+    }
+
+    @include min-mq (xl) {
+        flex: 1 0 46%;
+    }
+
+    @include min-mq (xxl) {
+        flex: 1 0 50%;
+    }
+}
+
+.contact__container,
+.openhour__container {
+    flex: 1 0 100%;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+
+    @include min-mq(xxs) {
+        margin: 0 auto;
+    }
+
+    @include min-mq (sm) {
+        flex: 1 0 47.5%;
+    }
+
+    @include min-mq (lg) {
+        flex: 1 0 33.33%;
+    }
+
+    @include min-mq (xl) {
+        flex: 1 0 27%;
+    }
+
+    @include min-mq (xxl) {
+        flex: 1 0 25%;
+    }
+}
+
+.contact__container {
+
+    @include min-mq (lg) {
+        justify-content: flex-start;
+    }
+}
+
+.openhour__container {
+
+    @include min-mq (lg) {
+        justify-content: flex-end;
+    }
+}
+
+.contact__content,
+.openhour__content {
+    max-width: f.rem(270);
+    width: 100%;
+
+    @include min-mq (sm) {
+        max-width: f.rem(320);
+        width: 95%;
+    }
+}
+
+.contact__container h2,
+.openhour__container h3 {
+    margin-inline: auto;
+    margin-bottom: 0.7rem;
+    padding-bottom: 0.7rem;
+    text-align: center;
+}
+
+.contact__grid {
+    text-align: center;
+
+    @include min-mq(xxs) {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, auto);
+        column-gap: f.rem(10);
+        row-gap: 0;
+        justify-content: center;
+        align-items: start;
+        text-align: left;
+    }
+}
+
+.contact__icon:first-of-type {
+    padding-left: 3px;
+}
+
+.openhour__small-grid {
+    text-align: center;
+
+    @include min-mq(xxs) {
+        display: none;
+    }
+}
+
+.openhour__small-grid li:nth-of-type(even) {
+    margin-bottom: 0.4rem;
+}
+
+.openhour__large-grid {
+    display: none;
+
+    @include min-mq(xxs) {
+        display: grid;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-columns: repeat(2, auto);
+        column-gap: f.rem(10);
+        row-gap: 0;
+        justify-content: center;
+        align-items: start;
+        text-align: left;
+    }
+}

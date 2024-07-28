@@ -1,0 +1,16 @@
+@use '../../../scss-common-partials/mixins' as *;
+
+.menu__tabs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.menu__tab {
+    flex: 1 0 33.33%;
+    padding: 1rem;
+    transition: 0.5s;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}

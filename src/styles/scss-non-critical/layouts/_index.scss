@@ -1,0 +1,10 @@
+@use './reservation-form' as *;
+@use './find-us' as *;
+@use './footer' as *;
+
+
+
+
+@forward '../layouts/reservation-form';
+@forward '../layouts/find-us';
+@forward '../layouts/footer';

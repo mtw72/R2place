@@ -1,0 +1,18 @@
+@use './variables' as *;
+@use './functions' as *;
+@use './utilities' as *;
+@use './fonts' as *;
+@use './breakpoints' as *;
+@use './mixins' as *;
+@use './layers' as *;
+
+
+
+
+@forward '../scss-common-partials/variables';
+@forward '../scss-common-partials/functions';
+@forward '../scss-common-partials/utilities';
+@forward '../scss-common-partials/fonts';
+@forward '../scss-common-partials/breakpoints';
+@forward '../scss-common-partials/mixins';
+@forward '../scss-common-partials/layers';

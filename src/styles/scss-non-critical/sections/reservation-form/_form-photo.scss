@@ -1,0 +1,33 @@
+@use '../../../scss-common-partials/variables' as *;
+@use '../../../scss-common-partials/functions' as f;
+@use '../../../scss-common-partials/mixins' as *;
+
+.reservation__photo {
+    display: none;
+
+    @include min-mq (xs) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1.5rem;
+    }
+
+    @include min-mq(xl) {
+        padding-bottom: 5.5rem;
+        justify-content: flex-start;
+    }
+}
+
+.reservation__photo img {
+    max-width: f.rem($mw-xs);
+    max-height: f.rem(400);
+    width: 100%;
+    height: auto;
+    border-radius: 0.375rem;
+    padding: 0.25rem;
+
+    @include min-mq(sm) {
+        max-width: f.rem($mw-sm);
+        max-height: f.rem(400);
+    }
+}
