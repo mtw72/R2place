@@ -234,9 +234,6 @@ button::-moz-focus-inner,
   padding: 0;
 }
 
-/**
-   * Restore the focus styles unset by the previous rule.
-   */
 /* Document
  * ========================================================================== */
 /**
@@ -448,6 +445,10 @@ body {
 
 hr {
   border: 1px solid rgb(229, 186, 115);
+}
+
+:focus {
+  outline: 2px solid rgb(255, 165, 0);
 }
 
 .skip-link {
