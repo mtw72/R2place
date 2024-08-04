@@ -6,7 +6,6 @@ $size-of-dot: 0.75rem;
 
 /* Slideshow container */
 .carousel {
-    // .carousel__track-container {
     position: relative;
     margin: auto;
     margin-top: f.rem(25);
@@ -142,6 +141,7 @@ $size-of-dot: 0.75rem;
     border-radius: 100%;
     border: none;
     box-shadow: none;
+    cursor: pointer;
 }
 
 .current-container {
