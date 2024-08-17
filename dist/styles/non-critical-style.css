@@ -1137,7 +1137,7 @@ input::-webkit-datetime-edit {
         -ms-flex-align: start;
             align-items: start;
     text-align: left;
-    margin-inline: auto;
+    margin-inline: 0;
   }
 }
 
