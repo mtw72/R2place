@@ -93,7 +93,6 @@
 
 .contact__grid {
     text-align: center;
-    margin-inline: auto;
 
     @include min-mq(xxs) {
         display: grid;
@@ -113,7 +112,6 @@
 
 .openhour__small-grid {
     text-align: center;
-    margin-inline: auto;
 
     @include min-mq(xxs) {
         display: none;
