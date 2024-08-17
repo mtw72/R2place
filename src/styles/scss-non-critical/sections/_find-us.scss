@@ -114,6 +114,7 @@
 
 .openhour__small-grid {
     text-align: center;
+    margin-inline: 0;
 
     @include min-mq(xxs) {
         display: none;
