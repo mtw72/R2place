@@ -91,9 +91,12 @@
     text-align: center;
 }
 
+address {
+    margin-inline: auto;
+}
+
 .contact__grid {
     text-align: center;
-    margin-inline: auto;
 
     @include min-mq(xxs) {
         display: grid;
@@ -104,7 +107,6 @@
         justify-content: center;
         align-items: start;
         text-align: left;
-        margin-inline: auto;
     }
 }
 
@@ -114,7 +116,6 @@
 
 .openhour__small-grid {
     text-align: center;
-    margin-inline: 0;
 
     @include min-mq(xxs) {
         display: none;
@@ -137,6 +138,5 @@
         justify-content: center;
         align-items: start;
         text-align: left;
-        margin-inline: 0;
     }
 }

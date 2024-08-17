@@ -1078,6 +1078,10 @@ input::-webkit-datetime-edit {
   text-align: center;
 }
 
+address {
+  margin-inline: auto;
+}
+
 .contact__grid {
   text-align: center;
 }
@@ -1097,7 +1101,6 @@ input::-webkit-datetime-edit {
         -ms-flex-align: start;
             align-items: start;
     text-align: left;
-    margin-inline: auto;
   }
 }
 
@@ -1137,7 +1140,6 @@ input::-webkit-datetime-edit {
         -ms-flex-align: start;
             align-items: start;
     text-align: left;
-    margin-inline: 0;
   }
 }
 
