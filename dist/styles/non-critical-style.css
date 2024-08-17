@@ -1080,6 +1080,7 @@ input::-webkit-datetime-edit {
 
 .contact__grid {
   text-align: center;
+  margin-inline: auto;
 }
 @media all and (min-width: 18.75em) {
   .contact__grid {

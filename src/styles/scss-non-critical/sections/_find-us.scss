@@ -93,6 +93,7 @@
 
 .contact__grid {
     text-align: center;
+    margin-inline: auto;
 
     @include min-mq(xxs) {
         display: grid;
